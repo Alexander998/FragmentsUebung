@@ -16,7 +16,7 @@ class VehicleRepository(private val dao: VehicleDAO) {
         dao.deleteVehicle(vehicle)
     }
 
-    suspend fun delete(vehicle: Vehicle): Long {
+    suspend fun delete(vehicle: Vehicle) {
         return dao.deleteVehicle((vehicle))
     }
 

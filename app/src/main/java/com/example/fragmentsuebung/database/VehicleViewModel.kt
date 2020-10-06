@@ -37,7 +37,7 @@ class VehicleViewModel(private val repository: VehicleRepository) : ViewModel(),
     fun saveOrUpdate(){
         val name = inputName.value!!
         val type = inputType.value!!
-        val release = inputRelease!!
+        val release = inputRelease.value!!
         insert(Vehicle (name, type, release))
         inputName.value = null
         inputRelease.value = null

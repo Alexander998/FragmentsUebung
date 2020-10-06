@@ -9,7 +9,7 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "vehicle_data_table")
 data class Vehicle(
 
-    @PrimaryKey(autoGenerate = true)
+    @PrimaryKey
     @ColumnInfo(name="vehicle_name")
     var name: String,
 
@@ -17,5 +17,5 @@ data class Vehicle(
     var type: String,
 
     @ColumnInfo(name="vehicle_release")
-    var release: MutableLiveData<String>
+    var release: String
 )
